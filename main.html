@@ -17,12 +17,17 @@
 		
 		<br><br>
 
-		<label for="gender">Gender:</label>
+		<label for="gender_m, gender_f">Gender:</label>
 			<input id="gender_m" type ="radio" name="gender" required = "Yes" value="male">Male 
 		    <input id="gender_f" type ="radio" name="gender" required = "Yes" value="female">Female 
 	<br><br>
 		<label for="cars">Car Brands</label>
-		   <input id="cars" type="select" required="Yes" placeholder="--Please choose an option--">
+		   <select id="cars" required>
+    <option value="" disabled selected>--Please choose an option--</option>
+    <option value="brand1">BMW</option>
+    <option value="brand2">Audi</option>
+    <option value="brand2">Mercedes</option>
+</select>
 		
 		<br><br>
 		<label for="age">Age:</label>
@@ -34,7 +39,7 @@
 		<br><br>
 
 		<label for="tel">Phone Number:</label>
-		<input id="Tel" type="tel" required="No" placeholder="xxx-xxx-xxxx">
+		<input id="tel" type="tel" required="No" placeholder="xxx-xxx-xxxx">
 		<br><br>
 
 		<label for="password">Password:</label>
@@ -46,8 +51,8 @@
 		<br><br>
 
 		<input type="submit" value="submit">
-		
-</script>
+
+	</form>
 
 </body>
 
